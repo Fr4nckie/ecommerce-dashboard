@@ -16,7 +16,7 @@ import {
 import { Link } from "react-router-dom"
 
 const items = [
-  { title: "Overview", url: "overview", icon: LucideLayoutDashboard },
+  { title: "Dashboard", url: "dashboard", icon: LucideLayoutDashboard },
   { title: "Products", url: "products", icon: Box },
   { title: "Orders", url: "orders", icon: ClipboardList },
   { title: "Customers", url: "customers", icon: Users },
