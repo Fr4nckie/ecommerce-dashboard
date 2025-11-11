@@ -1,4 +1,5 @@
 import type { Kpi } from "@/types/data.ts"
+import { Card, CardContent } from "../ui/card.tsx"
 
 function formatValue(k: Kpi) {
   if (k.id === "revenue") return `$${Number(k.value).toLocaleString()}`
@@ -44,38 +45,35 @@ function Sparkline({ data }: { data: number[] }) {
 
 const KpiCard = ({ kpi }: { kpi: Kpi }) => {
   return (
-    <div
-      key={kpi.id}
-      className="w-full bg-white dark:bg-slate-800 shadow-sm rounded-2xl p-4 sm:p-5 ring-1 ring-slate-100 dark:ring-slate-700"
-      role="group"
-      aria-labelledby={`kpi-${kpi.id}-label`}
-    >
-      <div className="flex flex-col gap-2">
-        <div className="flex items-center justify-between">
-          <div>
-            <p className="text-sm font-medium text-slate-500 dark:text-slate-300">
-              {kpi.label}
+    <Card>
+      <CardContent>
+        <div className="flex flex-col gap-2">
+          <div className="flex items-center justify-between">
+            <div>
+              <p className="text-sm font-medium text-slate-500 dark:text-slate-300">
+                {kpi.label}
+              </p>
+            </div>
+            <div
+              className={`ms-2 text-sm font-medium px-2 py-1 rounded-md text-center select-none ${typeof kpi.delta === "number" && kpi.delta >= 0 ? "bg-emerald-600" : "bg-rose-600"}`}
+            >
+              {typeof kpi.delta === "number"
+                ? `${kpi.delta >= 0 ? "+" : ""}${kpi.delta}%`
+                : ""}
+            </div>
+          </div>
+          <div className="flex items-center justify-between">
+            <p className="mt-2 text-2xl sm:text-3xl font-semibold text-slate-900 dark:text-white">
+              {formatValue(kpi as Kpi)}
             </p>
+            <div className="w-20 mt-2">
+              {kpi.sparkline ? <Sparkline data={kpi.sparkline} /> : null}
+            </div>
           </div>
-          <div
-            className={`text-sm font-medium px-2 py-1 rounded-md text-center select-none ${typeof kpi.delta === "number" && kpi.delta >= 0 ? "bg-emerald-600" : "bg-rose-600"}`}
-          >
-            {typeof kpi.delta === "number"
-              ? `${kpi.delta >= 0 ? "+" : ""}${kpi.delta}%`
-              : ""}
-          </div>
+          <div className="mt-1 text-xs text-slate-400">{kpi.hint}</div>
         </div>
-        <div className="flex items-center justify-between">
-          <p className="mt-2 text-2xl sm:text-3xl font-semibold text-slate-900 dark:text-white">
-            {formatValue(kpi as Kpi)}
-          </p>
-          <div className="w-20 mt-2">
-            {kpi.sparkline ? <Sparkline data={kpi.sparkline} /> : null}
-          </div>
-        </div>
-        <div className="mt-1 text-xs text-slate-400">{kpi.hint}</div>
-      </div>
-    </div>
+      </CardContent>
+    </Card>
   )
 }
 
