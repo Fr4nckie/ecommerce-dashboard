@@ -1,11 +1,23 @@
-import DashboardKpis from "@/components/DashboardKpis.tsx"
-import DashboardSales from "@/components/DashboardSales.tsx"
+import DashboardKpis from "@/components/Dashboard/DashboardKpis"
+import { RevenueByCountry } from "@/components/Dashboard/DashboardRevenueByCountry"
+import DashboardSales from "@/components/Dashboard/DashboardSales"
+import DashboardTopProducts from "@/components/Dashboard/DashboardTopProducts.tsx"
 
 const Dashboard = () => {
   return (
     <div className="w-full">
       <DashboardKpis />
-      <DashboardSales />
+      <div className="grid grid-cols-1 lg:grid-cols-2 lg:grid-rows-2 xl:grid-rows-1 xl:grid-cols-3 gap-4 mt-8">
+        <div className="*:h-full">
+          <DashboardSales />
+        </div>
+        <div className="*:h-full">
+          <DashboardTopProducts />
+        </div>
+        <div className="*:h-full lg:col-span-2 xl:col-span-1">
+          <RevenueByCountry />
+        </div>
+      </div>
     </div>
   )
 }
