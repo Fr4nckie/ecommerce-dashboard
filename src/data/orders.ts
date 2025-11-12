@@ -1,0 +1,53 @@
+export const ORDERS = [
+  {
+    orderId: "ORD-1001",
+    customerName: "Alice Dupont",
+    date: "2025-11-10T14:23:00Z",
+    status: "Shipped",
+    total: 129.99,
+    paymentMethod: "Credit Card",
+    items: [
+      { name: "Vintage T-shirt", quantity: 1, price: 29.99 },
+      { name: "Red Sneakers", quantity: 1, price: 100.0 },
+    ],
+  },
+  {
+    orderId: "ORD-1002",
+    customerName: "Marc Leroy",
+    date: "2025-11-09T09:45:00Z",
+    status: "Processing",
+    total: 59.5,
+    paymentMethod: "PayPal",
+    items: [{ name: "Black Cap", quantity: 2, price: 29.75 }],
+  },
+  {
+    orderId: "ORD-1003",
+    customerName: "Sofia Martin",
+    date: "2025-11-08T17:12:00Z",
+    status: "Delivered",
+    total: 249.0,
+    paymentMethod: "Credit Card",
+    items: [{ name: "Classic Watch", quantity: 1, price: 249.0 }],
+  },
+  {
+    orderId: "ORD-1004",
+    customerName: "Lucas Moreau",
+    date: "2025-11-08T12:30:00Z",
+    status: "Cancelled",
+    total: 79.99,
+    paymentMethod: "Bank Transfer",
+    items: [{ name: "Backpack", quantity: 1, price: 79.99 }],
+  },
+  {
+    orderId: "ORD-1005",
+    customerName: "Emma Bernard",
+    date: "2025-11-07T08:50:00Z",
+    status: "Shipped",
+    total: 199.99,
+    paymentMethod: "Credit Card",
+    items: [
+      { name: "Slim Fit Jeans", quantity: 1, price: 99.99 },
+      { name: "Wool Sweater", quantity: 1, price: 100.0 },
+    ],
+  },
+]

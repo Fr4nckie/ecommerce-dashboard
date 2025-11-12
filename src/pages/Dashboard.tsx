@@ -1,4 +1,5 @@
 import DashboardKpis from "@/components/Dashboard/DashboardKpis"
+import DashboardOrders from "@/components/Dashboard/DashboardOrders.tsx"
 import { RevenueByCountry } from "@/components/Dashboard/DashboardRevenueByCountry"
 import DashboardSales from "@/components/Dashboard/DashboardSales"
 import DashboardTopProducts from "@/components/Dashboard/DashboardTopProducts.tsx"
@@ -18,6 +19,7 @@ const Dashboard = () => {
           <RevenueByCountry />
         </div>
       </div>
+      <DashboardOrders />
     </div>
   )
 }
