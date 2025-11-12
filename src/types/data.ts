@@ -29,3 +29,21 @@ export type RevenueByCountry = {
   code: string
   revenue: number
 }
+
+// Type pour un produit dans la commande
+export type OrderItem = {
+  name: string
+  quantity: number
+  price: number
+}
+
+// Type pour une commande
+export type Order = {
+  orderId: string
+  customerName: string
+  date: string // ISO 8601 string
+  status: "Processing" | "Shipped" | "Delivered" | "Cancelled"
+  total: number
+  paymentMethod: string
+  items: OrderItem[]
+}
