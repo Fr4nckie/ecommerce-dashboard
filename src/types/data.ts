@@ -12,7 +12,7 @@ export type Sale = {
   revenue: number
 }
 
-export type Product = {
+export type TopProduct = {
   id: string
   name: string
   category: string
@@ -46,4 +46,16 @@ export type Order = {
   total: number
   paymentMethod: string
   items: OrderItem[]
+}
+
+export type Product = {
+  id: number
+  name: string
+  category: string
+  price: number
+  size: string
+  quantity: number
+  status: "In Stock" | "Low Stock" | "Out of Stock"
+  date: string // (ISO 8601)
+  image: string
 }
