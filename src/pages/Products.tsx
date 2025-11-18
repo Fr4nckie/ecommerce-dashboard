@@ -6,7 +6,7 @@ import { PRODUCTS } from "@/data/products.ts"
 
 const Products = () => {
   return (
-    <div className="w-full">
+    <div>
       <Card>
         <CardContent>
           <Table>

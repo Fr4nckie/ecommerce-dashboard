@@ -6,7 +6,7 @@ import DashboardTopProducts from "@/components/Dashboard/DashboardTopProducts.ts
 
 const Dashboard = () => {
   return (
-    <div className="w-full">
+    <div>
       <DashboardKpis />
       <div className="grid grid-cols-1 lg:grid-cols-2 lg:grid-rows-2 xl:grid-rows-1 xl:grid-cols-3 gap-4 mt-8">
         <div className="*:h-full">
