@@ -14,14 +14,22 @@ const OrderRow = ({ order }: OrderRowProps) => {
     Cancelled: "bg-red-100 text-red-800",
   }
   const date = new Date(order.date)
-  const formattedDate = `${date.toLocaleDateString()} ${date.toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" })}`
+  const formattedDate = date.toLocaleDateString()
+  const formattedHour = date.toLocaleTimeString([], {
+    hour: "2-digit",
+    minute: "2-digit",
+  })
 
   return (
     <TableRow>
       <TableCell>{order.items[0].name}</TableCell>
       <TableCell>#{order.orderId}</TableCell>
       <TableCell>{order.customerName}</TableCell>
-      <TableCell>{formattedDate}</TableCell>
+      <TableCell>
+        <span>{formattedDate}</span>
+        <br />
+        <span>{formattedHour}</span>
+      </TableCell>
       <TableCell>${order.items[0].price}</TableCell>
       <TableCell>
         <Badge className={`${statusColors[order.status]}`}>
