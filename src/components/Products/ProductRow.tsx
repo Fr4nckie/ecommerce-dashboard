@@ -20,7 +20,11 @@ const STATUS_COLORS: Record<string, string> = {
 
 const ProductRow = ({ product }: { product: Product }) => {
   const date = new Date(product.date)
-  const formattedDate = `${date.toLocaleDateString("en-US")} ${date.toLocaleTimeString("en-US", { hour: "2-digit", minute: "2-digit" })}`
+  const formattedDate = date.toLocaleDateString("en-US")
+  const formattedHour = date.toLocaleTimeString("en-US", {
+    hour: "2-digit",
+    minute: "2-digit",
+  })
 
   return (
     <TableRow>
@@ -61,11 +65,14 @@ const ProductRow = ({ product }: { product: Product }) => {
                 </span>
                 <span>{product.quantity}</span>
               </div>
-              <div>
+              <div className="flex items-start">
                 <span className="min-w-18 inline-block text-muted-foreground">
                   Date
                 </span>
-                <span>{formattedDate}</span>
+                <p>
+                  <span>{formattedDate}</span> <br />
+                  <span>{formattedHour}</span>
+                </p>
               </div>
               <div>
                 <span className="min-w-18 inline-block text-muted-foreground">
@@ -97,14 +104,18 @@ const ProductRow = ({ product }: { product: Product }) => {
       <TableCell className="hidden md:table-cell">{product.name}</TableCell>
       <TableCell className="hidden md:table-cell">${product.price}</TableCell>
       <TableCell className="hidden md:table-cell">{product.quantity}</TableCell>
-      <TableCell className="hidden lg:table-cell">{formattedDate}</TableCell>
+      <TableCell className="hidden text-xs md:table-cell lg:text-sm">
+        <span>{formattedDate}</span>
+        <br />
+        <span>{formattedHour}</span>
+      </TableCell>
       <TableCell className="hidden md:table-cell">
-        <Badge className={STATUS_COLORS[product.status]}>
+        <Badge className={cn(STATUS_COLORS[product.status])}>
           {product.status}
         </Badge>
       </TableCell>
       <TableCell className="hidden md:table-cell">{product.size}</TableCell>
-      <TableCell className="hidden md:table-cell">
+      <TableCell className="hidden text-right md:table-cell">
         <ProductRowActions />
       </TableCell>
     </TableRow>
