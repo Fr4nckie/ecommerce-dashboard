@@ -6,20 +6,18 @@ import { PRODUCTS } from "@/data/products.ts"
 
 const Products = () => {
   return (
-    <div>
-      <Card>
-        <CardContent>
-          <Table>
-            <ProductTableHeader />
-            <TableBody>
-              {PRODUCTS.map((product) => (
-                <ProductRow key={product.id} product={product} />
-              ))}
-            </TableBody>
-          </Table>
-        </CardContent>
-      </Card>
-    </div>
+    <Card>
+      <CardContent>
+        <Table>
+          <ProductTableHeader />
+          <TableBody>
+            {PRODUCTS.map((product) => (
+              <ProductRow key={product.id} product={product} />
+            ))}
+          </TableBody>
+        </Table>
+      </CardContent>
+    </Card>
   )
 }
 
