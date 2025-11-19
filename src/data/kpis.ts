@@ -19,7 +19,7 @@ export const KPIs_DATA: Kpi[] = [
   },
   {
     id: "aov",
-    label: "Average Order Value",
+    label: "Avg. Order",
     value: 21.2,
     delta: -1.4,
     hint: "$21.20 avg",
@@ -27,7 +27,7 @@ export const KPIs_DATA: Kpi[] = [
   },
   {
     id: "conversion",
-    label: "Conversion Rate",
+    label: "Conv. Rate",
     value: 2.1,
     delta: 0.3,
     hint: "vs last week",
