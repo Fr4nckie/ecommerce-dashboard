@@ -9,9 +9,10 @@ const MainLayout = () => {
       <AppSidebar />
       <SidebarInset>
         <HeaderMain />
-
-        <div className="flex flex-1 flex-col p-4 gap-4">
-          <Outlet />
+        <div className="flex flex-1 flex-col p-4">
+          <div className="grid grid-cols-1">
+            <Outlet />
+          </div>
         </div>
       </SidebarInset>
     </SidebarProvider>
