@@ -9,6 +9,7 @@ import {
 } from "../ui/table.tsx"
 import OrderRow from "./OrderRow.tsx"
 import type { Order } from "@/types/data.ts"
+import { ChevronsUpDown } from "lucide-react"
 
 const DashboardOrders = () => {
   return (
@@ -22,11 +23,18 @@ const DashboardOrders = () => {
             <TableHeader>
               <TableRow>
                 <TableHead>Product</TableHead>
-                <TableHead>Order ID</TableHead>
-                <TableHead>Customer Name</TableHead>
-                <TableHead>Date</TableHead>
-                <TableHead>Price</TableHead>
-                <TableHead>Status</TableHead>
+                <TableHead className="hidden md:table-cell">Order ID</TableHead>
+                <TableHead className="hidden md:table-cell">
+                  Customer Name
+                </TableHead>
+                <TableHead className="hidden md:table-cell">Date</TableHead>
+                <TableHead className="hidden md:table-cell">Price</TableHead>
+                <TableHead className="text-right md:text-left">Status</TableHead>
+                <TableHead className="md:hidden">
+                  <div className="flex justify-end">
+                    <ChevronsUpDown size={18} />
+                  </div>
+                </TableHead>
               </TableRow>
             </TableHeader>
             <TableBody>
