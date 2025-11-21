@@ -5,7 +5,7 @@ const ProductTableHeader = () => {
   return (
     <TableHeader className="w-full">
       <TableRow>
-        <TableHead className="w-8">
+        <TableHead className="w-8 hidden md:table-cell">
           <Square size={17} />
         </TableHead>
         <TableHead>Product</TableHead>
