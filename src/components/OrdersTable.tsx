@@ -15,7 +15,6 @@ const OrdersTable = ({ orders }: { orders: Order[] }) => {
       <TableHeader>
         <TableRow>
           <TableHead>Product</TableHead>
-          <TableHead className="hidden md:table-cell">Order ID</TableHead>
           <TableHead className="hidden md:table-cell">Customer Name</TableHead>
           <TableHead className="hidden md:table-cell">Date</TableHead>
           <TableHead className="hidden md:table-cell">Price</TableHead>
