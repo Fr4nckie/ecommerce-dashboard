@@ -1,6 +1,12 @@
 import type { Order } from "@/types/data.ts"
 import { TableCell, TableRow } from "../ui/table.tsx"
 import { Badge } from "../ui/badge.tsx"
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "../ui/accordion.tsx"
 
 interface OrderRowProps {
   order: Order
@@ -22,16 +28,60 @@ const OrderRow = ({ order }: OrderRowProps) => {
 
   return (
     <TableRow>
-      <TableCell>{order.items[0].name}</TableCell>
-      <TableCell>#{order.orderId}</TableCell>
-      <TableCell>{order.customerName}</TableCell>
-      <TableCell>
+      <TableCell colSpan={4} className="md:hidden">
+        <Accordion type="single" collapsible className="w-full">
+          <AccordionItem value="item-1">
+            <AccordionTrigger className="relative hover:no-underline p-0 [&>svg]:absolute [&>svg]:right-0 [&>svg]:top-1/2 [&>svg]:-translate-y-1/2">
+              <div className="w-full grid grid-cols-[50%_1fr_auto] py-3">
+                <div className="">{order.items[0].name}</div>
+                <div className="text-center">
+                  <Badge className={`${statusColors[order.status]}`}>
+                    {order.status}
+                  </Badge>
+                </div>
+              </div>
+            </AccordionTrigger>
+            <AccordionContent className="space-y-4 mt-2">
+              <div className="flex items-center justify-between">
+                <div className="text-muted-foreground">Order ID</div>
+                <div className="text-right">{order.orderId}</div>
+              </div>
+              <div className="flex items-center justify-between">
+                <div className="text-muted-foreground">Customer Name</div>
+                <div className="text-right text-wrap">{order.customerName}</div>
+              </div>
+              <div className="flex items-center justify-between">
+                <div className="text-muted-foreground">Date</div>
+                <div className="text-right">
+                  {formattedDate} <br />
+                  {formattedHour}
+                </div>
+              </div>
+              <div className="flex items-center justify-between">
+                <div className="text-muted-foreground">Price</div>
+                <div className="text-right">${order.total}</div>
+              </div>
+            </AccordionContent>
+          </AccordionItem>
+        </Accordion>
+      </TableCell>
+
+      <TableCell className="hidden md:table-cell">
+        {order.items[0].name}
+      </TableCell>
+      <TableCell className="hidden md:table-cell">#{order.orderId}</TableCell>
+      <TableCell className="hidden md:table-cell">
+        {order.customerName}
+      </TableCell>
+      <TableCell className="hidden md:table-cell">
         <span>{formattedDate}</span>
         <br />
         <span>{formattedHour}</span>
       </TableCell>
-      <TableCell>${order.items[0].price}</TableCell>
-      <TableCell>
+      <TableCell className="hidden md:table-cell">
+        ${order.items[0].price}
+      </TableCell>
+      <TableCell className="hidden md:table-cell">
         <Badge className={`${statusColors[order.status]}`}>
           {order.status}
         </Badge>
