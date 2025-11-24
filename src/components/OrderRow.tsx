@@ -1,12 +1,12 @@
 import type { Order } from "@/types/data.ts"
-import { TableCell, TableRow } from "../ui/table.tsx"
-import { Badge } from "../ui/badge.tsx"
+import { TableCell, TableRow } from "./ui/table.tsx"
 import {
   Accordion,
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
-} from "../ui/accordion.tsx"
+} from "./ui/accordion.tsx"
+import { Badge } from "./ui/badge.tsx"
 
 interface OrderRowProps {
   order: Order
@@ -32,8 +32,12 @@ const OrderRow = ({ order }: OrderRowProps) => {
         <Accordion type="single" collapsible className="w-full">
           <AccordionItem value="item-1">
             <AccordionTrigger className="relative hover:no-underline p-0 [&>svg]:absolute [&>svg]:right-0 [&>svg]:top-1/2 [&>svg]:-translate-y-1/2">
-              <div className="w-full grid grid-cols-[50%_1fr_auto] py-3">
-                <div className="">{order.items[0].name}</div>
+              <div className="w-full grid grid-cols-[50%_1fr_auto] py-3 items-center">
+                <ul className="list-disc pl-4 space-y-2">
+                  {order.items.map((item, index) => (
+                    <li key={index}>{item.name}</li>
+                  ))}
+                </ul>
                 <div className="text-center">
                   <Badge className={`${statusColors[order.status]}`}>
                     {order.status}
@@ -67,7 +71,11 @@ const OrderRow = ({ order }: OrderRowProps) => {
       </TableCell>
 
       <TableCell className="hidden md:table-cell">
-        {order.items[0].name}
+        <ul className="list-disc pl-4 space-y-2">
+          {order.items.map((item, index) => (
+            <li key={index}>{item.name}</li>
+          ))}
+        </ul>
       </TableCell>
       <TableCell className="hidden md:table-cell">#{order.orderId}</TableCell>
       <TableCell className="hidden md:table-cell">
