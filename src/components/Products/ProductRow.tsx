@@ -1,7 +1,6 @@
 import type { Product } from "@/types/data.ts"
 import { TableCell, TableRow } from "../ui/table.tsx"
 import { Badge } from "../ui/badge.tsx"
-import { ChevronDown } from "lucide-react"
 import {
   Accordion,
   AccordionContent,
@@ -32,21 +31,11 @@ const ProductRow = ({ product }: { product: Product }) => {
       <TableCell colSpan={3} className="p-0 md:hidden">
         <Accordion type="single" collapsible className="w-full">
           <AccordionItem value="item-1" className="border-b-0">
-            <AccordionTrigger className="hover:no-underline p-0 [&>svg]:hidden">
-              <div className="flex items-center w-full">
-                <div className="w-8 ps-2 pe-8 py-3">
-                  <Checkbox />
-                </div>
-                <div className="flex-1  py-3 text-left">{product.name}</div>
-                <div className="w-12 pe-4 py-3 flex justify-end">
-                  <ChevronDown
-                    size={18}
-                    className="transition-transform duration-200 data-[state=open]:rotate-180"
-                  />
-                </div>
-              </div>
+            <AccordionTrigger className="relative hover:no-underline p-0 [&>svg]:absolute [&>svg]:right-4 [&>svg]:top-1/2 [&>svg]:-translate-y-1/2">
+              <div className="flex-1 ps-2 py-3 text-left">{product.name}</div>
             </AccordionTrigger>
-            <AccordionContent className="ps-10 space-y-4">
+            <AccordionContent className="ps-2 mt-2 space-y-4">
+              <Checkbox />
               <div>
                 <span className="min-w-18 inline-block text-muted-foreground">
                   Price
@@ -70,8 +59,7 @@ const ProductRow = ({ product }: { product: Product }) => {
                   Date
                 </span>
                 <p>
-                  <span>{formattedDate}</span> <br />
-                  <span>{formattedHour}</span>
+                  {formattedDate} {formattedHour}
                 </p>
               </div>
               <div>
