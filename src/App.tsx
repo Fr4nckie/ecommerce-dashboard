@@ -3,6 +3,7 @@ import MainLayout from "./pages/MainLayout.tsx"
 import Dashboard from "./pages/Dashboard.tsx"
 import { kpisLoader } from "./services/kpisLoader.ts"
 import Products from "./pages/Products.tsx"
+import Orders from "./pages/Orders.tsx"
 
 const router = createBrowserRouter([
   {
@@ -12,7 +13,7 @@ const router = createBrowserRouter([
       { index: true, element: <Navigate to="dashboard" replace /> },
       { path: "dashboard", element: <Dashboard />, loader: kpisLoader },
       { path: "products", element: <Products /> },
-      { path: "orders", element: <div>orders</div> },
+      { path: "orders", element: <Orders /> },
       { path: "customers", element: <div>customers</div> },
       { path: "analytics", element: <div>Analytics</div> },
       { path: "settings", element: <div>Settings</div> },
