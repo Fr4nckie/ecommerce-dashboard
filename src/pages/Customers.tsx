@@ -1,5 +1,6 @@
 import CustomerRow from "@/components/CustomerRow.tsx"
 import { Card, CardContent } from "@/components/ui/card.tsx"
+import { Spinner } from "@/components/ui/spinner.tsx"
 import {
   Table,
   TableBody,
@@ -7,10 +8,19 @@ import {
   TableHeader,
   TableRow,
 } from "@/components/ui/table.tsx"
-import { CUSTOMERS } from "@/data/customers.ts"
+import { useGetProductsQuery } from "@/features/customers/customersApi.ts"
 import { ChevronsUpDown } from "lucide-react"
 
 const Customers = () => {
+  const { data: customers = [], isLoading } = useGetProductsQuery()
+
+  if (isLoading)
+    return (
+      <div className="w-full h-full flex items-center justify-center">
+        <Spinner className="size-6" />
+      </div>
+    )
+
   return (
     <Card>
       <CardContent>
@@ -30,7 +40,7 @@ const Customers = () => {
             </TableRow>
           </TableHeader>
           <TableBody>
-            {CUSTOMERS.map((customer) => (
+            {customers.map((customer) => (
               <CustomerRow key={customer.id} customer={customer} />
             ))}
           </TableBody>
