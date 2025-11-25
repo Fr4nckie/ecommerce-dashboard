@@ -59,3 +59,12 @@ export type Product = {
   date: string // (ISO 8601)
   image: string
 }
+
+export type Customer = {
+  id: string
+  name: string
+  contact: { phone: string; email: string }
+  purchases: number
+  orderQuantity: number
+  address: { street: string; city: string }
+}
