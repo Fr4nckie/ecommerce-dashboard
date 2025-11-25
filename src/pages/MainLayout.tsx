@@ -7,10 +7,10 @@ const MainLayout = () => {
   return (
     <SidebarProvider>
       <AppSidebar />
-      <SidebarInset>
+      <SidebarInset className="min-h-screen flex flex-col">
         <HeaderMain />
         <div className="flex flex-1 flex-col p-4">
-          <div className="grid grid-cols-1">
+          <div className="w-full h-full grid grid-cols-1">
             <Outlet />
           </div>
         </div>
