@@ -1,0 +1,529 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "title": "Backpack Fjallraven",
+      "price": 109.95,
+      "stock": 50,
+      "category": "men's clothing",
+      "image": "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg"
+    },
+    {
+      "id": "2",
+      "title": "Running Shoes",
+      "price": 75.0,
+      "stock": 30,
+      "category": "shoes",
+      "image": "https://fakestoreapi.com/img/71pWzhdJNwL._AC_UL640_QL65_ML3_.jpg"
+    },
+    {
+      "id": "3",
+      "title": "T-Shirt Casual",
+      "price": 25.5,
+      "stock": 100,
+      "category": "men's clothing",
+      "image": "https://fakestoreapi.com/img/71-3HjGND-L._AC_UX679_.jpg"
+    },
+    {
+      "id": "4",
+      "title": "Jeans Slim Fit",
+      "price": 55.0,
+      "stock": 80,
+      "category": "men's clothing",
+      "image": "https://fakestoreapi.com/img/61pHAEJ4NML._AC_UX679_.jpg"
+    },
+    {
+      "id": "5",
+      "title": "Smartwatch",
+      "price": 199.99,
+      "stock": 40,
+      "category": "electronics",
+      "image": "https://fakestoreapi.com/img/71hF0KROJUL._AC_UL640_QL65_ML3_.jpg"
+    },
+    {
+      "id": "6",
+      "title": "Wireless Earbuds",
+      "price": 59.99,
+      "stock": 60,
+      "category": "electronics",
+      "image": "https://fakestoreapi.com/img/61bJdN2e0bL._AC_UL640_QL65_ML3_.jpg"
+    },
+    {
+      "id": "7",
+      "title": "Leather Wallet",
+      "price": 35.0,
+      "stock": 70,
+      "category": "accessories",
+      "image": "https://fakestoreapi.com/img/81f7cc6X92L._AC_UL640_QL65_ML3_.jpg"
+    },
+    {
+      "id": "8",
+      "title": "Sunglasses Aviator",
+      "price": 45.5,
+      "stock": 50,
+      "category": "accessories",
+      "image": "https://fakestoreapi.com/img/71z7eQ4XwCL._AC_UX679_.jpg"
+    },
+    {
+      "id": "9",
+      "title": "Hoodie Unisex",
+      "price": 49.99,
+      "stock": 90,
+      "category": "men's clothing",
+      "image": "https://fakestoreapi.com/img/71pZ4vfy8rL._AC_UX679_.jpg"
+    },
+    {
+      "id": "10",
+      "title": "Laptop Stand",
+      "price": 29.99,
+      "stock": 100,
+      "category": "electronics",
+      "image": "https://fakestoreapi.com/img/61ojP7cGZCL._AC_UL640_QL65_ML3_.jpg"
+    },
+    {
+      "id": "11",
+      "title": "Office Chair",
+      "price": 129.99,
+      "stock": 20,
+      "category": "furniture",
+      "image": "https://fakestoreapi.com/img/61M7eJtk3bL._AC_UL640_QL65_ML3_.jpg"
+    },
+    {
+      "id": "12",
+      "title": "Desk Lamp",
+      "price": 39.99,
+      "stock": 45,
+      "category": "furniture",
+      "image": "https://fakestoreapi.com/img/71OyVYbXwPL._AC_UL640_QL65_ML3_.jpg"
+    },
+    {
+      "id": "13",
+      "title": "Coffee Mug",
+      "price": 12.99,
+      "stock": 150,
+      "category": "kitchen",
+      "image": "https://fakestoreapi.com/img/71pV76j6RNL._AC_UX679_.jpg"
+    },
+    {
+      "id": "14",
+      "title": "Blender",
+      "price": 89.99,
+      "stock": 30,
+      "category": "kitchen",
+      "image": "https://fakestoreapi.com/img/61hXQdB9jBL._AC_UL640_QL65_ML3_.jpg"
+    },
+    {
+      "id": "15",
+      "title": "Yoga Mat",
+      "price": 29.99,
+      "stock": 60,
+      "category": "sports",
+      "image": "https://fakestoreapi.com/img/71xF-2gKKzL._AC_UL640_QL65_ML3_.jpg"
+    },
+    {
+      "id": "16",
+      "title": "Tennis Racket",
+      "price": 79.99,
+      "stock": 25,
+      "category": "sports",
+      "image": "https://fakestoreapi.com/img/71pJ3kPF8-L._AC_UL640_QL65_ML3_.jpg"
+    },
+    {
+      "id": "17",
+      "title": "Gaming Mouse",
+      "price": 49.99,
+      "stock": 40,
+      "category": "electronics",
+      "image": "https://fakestoreapi.com/img/61qDSok2htL._AC_UL640_QL65_ML3_.jpg"
+    },
+    {
+      "id": "18",
+      "title": "Mechanical Keyboard",
+      "price": 99.99,
+      "stock": 30,
+      "category": "electronics",
+      "image": "https://fakestoreapi.com/img/61Zqfrp2bIL._AC_UL640_QL65_ML3_.jpg"
+    },
+    {
+      "id": "19",
+      "title": "Bluetooth Speaker",
+      "price": 59.99,
+      "stock": 50,
+      "category": "electronics",
+      "image": "https://fakestoreapi.com/img/71P8bih1ghL._AC_UL640_QL65_ML3_.jpg"
+    },
+    {
+      "id": "20",
+      "title": "Backpack Kids",
+      "price": 49.99,
+      "stock": 70,
+      "category": "kids",
+      "image": "https://fakestoreapi.com/img/71dU9HffMJL._AC_UX679_.jpg"
+    }
+  ],
+  "customers": [
+    {
+      "id": "1",
+      "name": "Alice Dupont",
+      "email": "alice@example.com",
+      "address": "123 Rue Exemple, Paris",
+      "status": "VIP"
+    },
+    {
+      "id": "2",
+      "name": "Bob Martin",
+      "email": "bob@example.com",
+      "address": "456 Avenue Test, Lyon",
+      "status": "Regular"
+    },
+    {
+      "id": "3",
+      "name": "Clara Petit",
+      "email": "clara@example.com",
+      "address": "789 Boulevard Test, Marseille",
+      "status": "New"
+    },
+    {
+      "id": "4",
+      "name": "David Roche",
+      "email": "david@example.com",
+      "address": "12 Rue Lafayette, Paris",
+      "status": "Regular"
+    },
+    {
+      "id": "5",
+      "name": "Emma Leroy",
+      "email": "emma@example.com",
+      "address": "34 Avenue Victor, Lille",
+      "status": "VIP"
+    },
+    {
+      "id": "6",
+      "name": "François Dubois",
+      "email": "francois@example.com",
+      "address": "56 Rue République, Lyon",
+      "status": "New"
+    },
+    {
+      "id": "7",
+      "name": "Gabriel Martin",
+      "email": "gabriel@example.com",
+      "address": "78 Avenue de la Gare, Nice",
+      "status": "Regular"
+    },
+    {
+      "id": "8",
+      "name": "Hélène Moreau",
+      "email": "helene@example.com",
+      "address": "90 Boulevard Victor, Paris",
+      "status": "VIP"
+    },
+    {
+      "id": "9",
+      "name": "Isabelle Laurent",
+      "email": "isabelle@example.com",
+      "address": "11 Rue des Fleurs, Toulouse",
+      "status": "Regular"
+    },
+    {
+      "id": "10",
+      "name": "Jean Dupuis",
+      "email": "jean@example.com",
+      "address": "22 Avenue de Lyon, Lyon",
+      "status": "New"
+    },
+    {
+      "id": "11",
+      "name": "Karim Ben",
+      "email": "karim@example.com",
+      "address": "33 Rue Test, Marseille",
+      "status": "Regular"
+    },
+    {
+      "id": "12",
+      "name": "Laura Petit",
+      "email": "laura@example.com",
+      "address": "44 Boulevard Victor, Paris",
+      "status": "VIP"
+    },
+    {
+      "id": "13",
+      "name": "Marc Leroy",
+      "email": "marc@example.com",
+      "address": "55 Rue Lafayette, Lyon",
+      "status": "Regular"
+    },
+    {
+      "id": "14",
+      "name": "Nina Roche",
+      "email": "nina@example.com",
+      "address": "66 Avenue Test, Nice",
+      "status": "New"
+    },
+    {
+      "id": "15",
+      "name": "Olivier Dubois",
+      "email": "olivier@example.com",
+      "address": "77 Rue de Paris, Paris",
+      "status": "VIP"
+    },
+    {
+      "id": "16",
+      "name": "Paul Martin",
+      "email": "paul@example.com",
+      "address": "88 Avenue des Champs, Lyon",
+      "status": "Regular"
+    },
+    {
+      "id": "17",
+      "name": "Quentin Leroy",
+      "email": "quentin@example.com",
+      "address": "99 Rue Test, Toulouse",
+      "status": "New"
+    },
+    {
+      "id": "18",
+      "name": "Rachel Petit",
+      "email": "rachel@example.com",
+      "address": "101 Boulevard Victor, Marseille",
+      "status": "Regular"
+    },
+    {
+      "id": "19",
+      "name": "Sophie Laurent",
+      "email": "sophie@example.com",
+      "address": "111 Rue des Fleurs, Paris",
+      "status": "VIP"
+    },
+    {
+      "id": "20",
+      "name": "Thomas Dupuis",
+      "email": "thomas@example.com",
+      "address": "121 Avenue Lyon, Lyon",
+      "status": "Regular"
+    }
+  ],
+  "orders": [
+    {
+      "id": "1",
+      "userId": "1",
+      "date": "2025-11-25T12:30:00Z",
+      "products": [
+        { "productId": "1", "quantity": 2 },
+        { "productId": "5", "quantity": 1 }
+      ],
+      "total": 419.89,
+      "status": "Shipped",
+      "paymentMethod": "Credit Card",
+      "address": "123 Rue Exemple, Paris"
+    },
+    {
+      "id": "2",
+      "userId": "2",
+      "date": "2025-11-24T15:45:00Z",
+      "products": [{ "productId": "2", "quantity": 1 }],
+      "total": 75.0,
+      "status": "Pending",
+      "paymentMethod": "Paypal",
+      "address": "456 Avenue Test, Lyon"
+    },
+    {
+      "id": "3",
+      "userId": "3",
+      "date": "2025-11-23T10:20:00Z",
+      "products": [{ "productId": "3", "quantity": 3 }],
+      "total": 76.5,
+      "status": "Cancelled",
+      "paymentMethod": "Credit Card",
+      "address": "789 Boulevard Test, Marseille"
+    },
+    {
+      "id": "4",
+      "userId": "4",
+      "date": "2025-11-22T09:10:00Z",
+      "products": [{ "productId": "4", "quantity": 2 }],
+      "total": 110.0,
+      "status": "Shipped",
+      "paymentMethod": "Paypal",
+      "address": "12 Rue Lafayette, Paris"
+    },
+    {
+      "id": "5",
+      "userId": "5",
+      "date": "2025-11-21T14:50:00Z",
+      "products": [
+        { "productId": "5", "quantity": 1 },
+        { "productId": "6", "quantity": 2 }
+      ],
+      "total": 319.97,
+      "status": "Pending",
+      "paymentMethod": "Credit Card",
+      "address": "34 Avenue Victor, Lille"
+    },
+    {
+      "id": "6",
+      "userId": "6",
+      "date": "2025-11-20T11:30:00Z",
+      "products": [{ "productId": "7", "quantity": 1 }],
+      "total": 35.0,
+      "status": "Shipped",
+      "paymentMethod": "Paypal",
+      "address": "56 Rue République, Lyon"
+    },
+    {
+      "id": "7",
+      "userId": "7",
+      "date": "2025-11-19T16:40:00Z",
+      "products": [
+        { "productId": "8", "quantity": 2 },
+        { "productId": "9", "quantity": 1 }
+      ],
+      "total": 140.99,
+      "status": "Pending",
+      "paymentMethod": "Credit Card",
+      "address": "78 Avenue de la Gare, Nice"
+    },
+    {
+      "id": "8",
+      "userId": "8",
+      "date": "2025-11-18T13:25:00Z",
+      "products": [{ "productId": "10", "quantity": 1 }],
+      "total": 29.99,
+      "status": "Shipped",
+      "paymentMethod": "Paypal",
+      "address": "90 Boulevard Victor, Paris"
+    },
+    {
+      "id": "9",
+      "userId": "9",
+      "date": "2025-11-17T12:15:00Z",
+      "products": [{ "productId": "11", "quantity": 1 }],
+      "total": 129.99,
+      "status": "Shipped",
+      "paymentMethod": "Credit Card",
+      "address": "11 Rue des Fleurs, Toulouse"
+    },
+    {
+      "id": "10",
+      "userId": "10",
+      "date": "2025-11-16T17:05:00Z",
+      "products": [{ "productId": "12", "quantity": 2 }],
+      "total": 79.98,
+      "status": "Cancelled",
+      "paymentMethod": "Paypal",
+      "address": "22 Avenue de Lyon, Lyon"
+    },
+    {
+      "id": "11",
+      "userId": "11",
+      "date": "2025-11-15T10:30:00Z",
+      "products": [{ "productId": "13", "quantity": 3 }],
+      "total": 38.97,
+      "status": "Shipped",
+      "paymentMethod": "Credit Card",
+      "address": "33 Rue Test, Marseille"
+    },
+    {
+      "id": "12",
+      "userId": "12",
+      "date": "2025-11-14T09:15:00Z",
+      "products": [
+        { "productId": "14", "quantity": 1 },
+        { "productId": "15", "quantity": 2 }
+      ],
+      "total": 149.97,
+      "status": "Pending",
+      "paymentMethod": "Paypal",
+      "address": "44 Boulevard Victor, Paris"
+    },
+    {
+      "id": "13",
+      "userId": "13",
+      "date": "2025-11-13T14:00:00Z",
+      "products": [{ "productId": "16", "quantity": 1 }],
+      "total": 79.99,
+      "status": "Shipped",
+      "paymentMethod": "Credit Card",
+      "address": "55 Rue Lafayette, Lyon"
+    },
+    {
+      "id": "14",
+      "userId": "14",
+      "date": "2025-11-12T13:20:00Z",
+      "products": [{ "productId": "17", "quantity": 2 }],
+      "total": 99.98,
+      "status": "Pending",
+      "paymentMethod": "Paypal",
+      "address": "66 Avenue Test, Nice"
+    },
+    {
+      "id": "15",
+      "userId": "15",
+      "date": "2025-11-11T11:45:00Z",
+      "products": [
+        { "productId": "18", "quantity": 1 },
+        { "productId": "19", "quantity": 1 }
+      ],
+      "total": 159.98,
+      "status": "Shipped",
+      "paymentMethod": "Credit Card",
+      "address": "77 Rue de Paris, Paris"
+    },
+    {
+      "id": "16",
+      "userId": "16",
+      "date": "2025-11-10T10:50:00Z",
+      "products": [{ "productId": "20", "quantity": 2 }],
+      "total": 99.98,
+      "status": "Pending",
+      "paymentMethod": "Paypal",
+      "address": "88 Avenue des Champs, Lyon"
+    },
+    {
+      "id": "17",
+      "userId": "17",
+      "date": "2025-11-09T09:40:00Z",
+      "products": [
+        { "productId": "1", "quantity": 1 },
+        { "productId": "2", "quantity": 2 }
+      ],
+      "total": 259.95,
+      "status": "Shipped",
+      "paymentMethod": "Credit Card",
+      "address": "99 Rue Test, Toulouse"
+    },
+    {
+      "id": "18",
+      "userId": "18",
+      "date": "2025-11-08T14:30:00Z",
+      "products": [{ "productId": "3", "quantity": 2 }],
+      "total": 51.0,
+      "status": "Cancelled",
+      "paymentMethod": "Paypal",
+      "address": "101 Boulevard Victor, Marseille"
+    },
+    {
+      "id": "19",
+      "userId": "19",
+      "date": "2025-11-07T12:25:00Z",
+      "products": [
+        { "productId": "4", "quantity": 1 },
+        { "productId": "5", "quantity": 1 }
+      ],
+      "total": 264.95,
+      "status": "Shipped",
+      "paymentMethod": "Credit Card",
+      "address": "111 Rue des Fleurs, Paris"
+    },
+    {
+      "id": "20",
+      "userId": "20",
+      "date": "2025-11-06T13:15:00Z",
+      "products": [{ "productId": "6", "quantity": 2 }],
+      "total": 119.98,
+      "status": "Pending",
+      "paymentMethod": "Paypal",
+      "address": "121 Avenue Lyon, Lyon"
+    }
+  ]
+}
