@@ -4,6 +4,7 @@ import Dashboard from "./pages/Dashboard.tsx"
 import { kpisLoader } from "./services/kpisLoader.ts"
 import Products from "./pages/Products.tsx"
 import Orders from "./pages/Orders.tsx"
+import Customers from "./pages/Customers.tsx"
 
 const router = createBrowserRouter([
   {
@@ -14,7 +15,7 @@ const router = createBrowserRouter([
       { path: "dashboard", element: <Dashboard />, loader: kpisLoader },
       { path: "products", element: <Products /> },
       { path: "orders", element: <Orders /> },
-      { path: "customers", element: <div>customers</div> },
+      { path: "customers", element: <Customers /> },
       { path: "analytics", element: <div>Analytics</div> },
       { path: "settings", element: <div>Settings</div> },
     ],
