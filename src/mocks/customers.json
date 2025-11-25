@@ -1,0 +1,142 @@
+[
+  {
+    "id": "1",
+    "name": "Alice Dupont",
+    "email": "alice@example.com",
+    "address": "123 Rue Exemple, Paris",
+    "status": "VIP"
+  },
+  {
+    "id": "2",
+    "name": "Bob Martin",
+    "email": "bob@example.com",
+    "address": "456 Avenue Test, Lyon",
+    "status": "Regular"
+  },
+  {
+    "id": "3",
+    "name": "Clara Petit",
+    "email": "clara@example.com",
+    "address": "789 Boulevard Test, Marseille",
+    "status": "New"
+  },
+  {
+    "id": "4",
+    "name": "David Roche",
+    "email": "david@example.com",
+    "address": "12 Rue Lafayette, Paris",
+    "status": "Regular"
+  },
+  {
+    "id": "5",
+    "name": "Emma Leroy",
+    "email": "emma@example.com",
+    "address": "34 Avenue Victor, Lille",
+    "status": "VIP"
+  },
+  {
+    "id": "6",
+    "name": "François Dubois",
+    "email": "francois@example.com",
+    "address": "56 Rue République, Lyon",
+    "status": "New"
+  },
+  {
+    "id": "7",
+    "name": "Gabriel Martin",
+    "email": "gabriel@example.com",
+    "address": "78 Avenue de la Gare, Nice",
+    "status": "Regular"
+  },
+  {
+    "id": "8",
+    "name": "Hélène Moreau",
+    "email": "helene@example.com",
+    "address": "90 Boulevard Victor, Paris",
+    "status": "VIP"
+  },
+  {
+    "id": "9",
+    "name": "Isabelle Laurent",
+    "email": "isabelle@example.com",
+    "address": "11 Rue des Fleurs, Toulouse",
+    "status": "Regular"
+  },
+  {
+    "id": "10",
+    "name": "Jean Dupuis",
+    "email": "jean@example.com",
+    "address": "22 Avenue de Lyon, Lyon",
+    "status": "New"
+  },
+  {
+    "id": "11",
+    "name": "Karim Ben",
+    "email": "karim@example.com",
+    "address": "33 Rue Test, Marseille",
+    "status": "Regular"
+  },
+  {
+    "id": "12",
+    "name": "Laura Petit",
+    "email": "laura@example.com",
+    "address": "44 Boulevard Victor, Paris",
+    "status": "VIP"
+  },
+  {
+    "id": "13",
+    "name": "Marc Leroy",
+    "email": "marc@example.com",
+    "address": "55 Rue Lafayette, Lyon",
+    "status": "Regular"
+  },
+  {
+    "id": "14",
+    "name": "Nina Roche",
+    "email": "nina@example.com",
+    "address": "66 Avenue Test, Nice",
+    "status": "New"
+  },
+  {
+    "id": "15",
+    "name": "Olivier Dubois",
+    "email": "olivier@example.com",
+    "address": "77 Rue de Paris, Paris",
+    "status": "VIP"
+  },
+  {
+    "id": "16",
+    "name": "Paul Martin",
+    "email": "paul@example.com",
+    "address": "88 Avenue des Champs, Lyon",
+    "status": "Regular"
+  },
+  {
+    "id": "17",
+    "name": "Quentin Leroy",
+    "email": "quentin@example.com",
+    "address": "99 Rue Test, Toulouse",
+    "status": "New"
+  },
+  {
+    "id": "18",
+    "name": "Rachel Petit",
+    "email": "rachel@example.com",
+    "address": "101 Boulevard Victor, Marseille",
+    "status": "Regular"
+  },
+  {
+    "id": "19",
+    "name": "Sophie Laurent",
+    "email": "sophie@example.com",
+    "address": "111 Rue des Fleurs, Paris",
+    "status": "VIP"
+  },
+  {
+    "id": "20",
+    "name": "Thomas Dupuis",
+    "email": "thomas@example.com",
+    "address": "121 Avenue Lyon, Lyon",
+    "status": "Regular"
+  }
+]
