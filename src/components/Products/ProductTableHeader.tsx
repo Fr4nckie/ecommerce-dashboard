@@ -11,10 +11,11 @@ const ProductTableHeader = () => {
         <TableHead>Product</TableHead>
         <TableHead className="hidden md:table-cell">Price</TableHead>
         <TableHead className="hidden md:table-cell">QTY</TableHead>
-        <TableHead className="hidden md:table-cell">Date</TableHead>
         <TableHead className="hidden md:table-cell">Status</TableHead>
-        <TableHead className="hidden md:table-cell">Size</TableHead>
-        <TableHead className="hidden text-right md:table-cell">Action</TableHead>
+        <TableHead className="hidden md:table-cell">Category</TableHead>
+        <TableHead className="hidden text-right md:table-cell">
+          Action
+        </TableHead>
 
         {/** Mobile */}
         <TableHead className="w-12 pe-4 md:hidden">

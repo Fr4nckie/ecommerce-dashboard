@@ -12,19 +12,12 @@ import { cn } from "@/lib/utils.ts"
 import ProductRowActions from "./ProductRowActions.tsx"
 
 const STATUS_COLORS: Record<string, string> = {
-  "In Stock": "bg-green-100 text-green-800",
-  "Low Stock": "bg-yellow-100 text-yellow-800",
-  "Out of Stock": "bg-red-100 text-red-800",
+  "in stock": "bg-green-100 text-green-800",
+  "low stock": "bg-yellow-100 text-yellow-800",
+  "out of stock": "bg-red-100 text-red-800",
 }
 
 const ProductRow = ({ product }: { product: Product }) => {
-  const date = new Date(product.date)
-  const formattedDate = date.toLocaleDateString("en-US")
-  const formattedHour = date.toLocaleTimeString("en-US", {
-    hour: "2-digit",
-    minute: "2-digit",
-  })
-
   return (
     <TableRow>
       {/* Mobile */}
@@ -32,48 +25,40 @@ const ProductRow = ({ product }: { product: Product }) => {
         <Accordion type="single" collapsible className="w-full">
           <AccordionItem value="item-1" className="border-b-0">
             <AccordionTrigger className="relative hover:no-underline p-0 [&>svg]:absolute [&>svg]:right-4 [&>svg]:top-1/2 [&>svg]:-translate-y-1/2">
-              <div className="flex-1 ps-2 py-3 text-left">{product.name}</div>
+              <div className="flex-1 ps-2 py-3 text-left">{product.title}</div>
             </AccordionTrigger>
             <AccordionContent className="ps-2 mt-2 space-y-4">
               <Checkbox />
               <div>
-                <span className="min-w-18 inline-block text-muted-foreground">
+                <span className="min-w-24 inline-block text-muted-foreground">
                   Price
                 </span>
                 <span>${product.price}</span>
               </div>
               <div>
-                <span className="min-w-18 inline-block text-muted-foreground">
-                  Size
-                </span>
-                <span>{product.size}</span>
-              </div>
-              <div>
-                <span className="min-w-18 inline-block text-muted-foreground">
+                <span className="min-w-24 inline-block text-muted-foreground">
                   QTY
                 </span>
-                <span>{product.quantity}</span>
-              </div>
-              <div className="flex items-start">
-                <span className="min-w-18 inline-block text-muted-foreground">
-                  Date
-                </span>
-                <p>
-                  {formattedDate} {formattedHour}
-                </p>
+                <span>{product.stock}</span>
               </div>
               <div>
                 <span className="min-w-18 inline-block text-muted-foreground">
                   Status
                 </span>
-                <span>
+                <span className="capitalize">
                   <Badge className={cn(STATUS_COLORS[product.status])}>
                     {product.status}
                   </Badge>
                 </span>
               </div>
+              <div>
+                <span className="min-w-24 inline-block text-muted-foreground">
+                  Category
+                </span>
+                <span className="capitalize">{product.category}</span>
+              </div>
               <div className="flex items-center">
-                <span className="min-w-18 inline-block text-muted-foreground">
+                <span className="min-w-24 inline-block text-muted-foreground">
                   Action
                 </span>
                 <span>
@@ -89,20 +74,18 @@ const ProductRow = ({ product }: { product: Product }) => {
       <TableCell className="hidden md:table-cell">
         <Checkbox />
       </TableCell>
-      <TableCell className="hidden md:table-cell">{product.name}</TableCell>
+      <TableCell className="hidden md:table-cell">{product.title}</TableCell>
       <TableCell className="hidden md:table-cell">${product.price}</TableCell>
-      <TableCell className="hidden md:table-cell">{product.quantity}</TableCell>
-      <TableCell className="hidden text-xs md:table-cell lg:text-sm">
-        <span>{formattedDate}</span>
-        <br />
-        <span>{formattedHour}</span>
-      </TableCell>
+      <TableCell className="hidden md:table-cell">{product.stock}</TableCell>
+
       <TableCell className="hidden md:table-cell">
         <Badge className={cn(STATUS_COLORS[product.status])}>
           {product.status}
         </Badge>
       </TableCell>
-      <TableCell className="hidden md:table-cell">{product.size}</TableCell>
+      <TableCell className="capitalize hidden md:table-cell">
+        {product.category}
+      </TableCell>
       <TableCell className="hidden text-right md:table-cell">
         <ProductRowActions />
       </TableCell>
