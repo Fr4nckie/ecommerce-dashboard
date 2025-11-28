@@ -1,4 +1,5 @@
 import CustomerRow from "@/components/CustomerRow.tsx"
+import { Alert, AlertTitle } from "@/components/ui/alert.tsx"
 import { Card, CardContent } from "@/components/ui/card.tsx"
 import { Spinner } from "@/components/ui/spinner.tsx"
 import {
@@ -8,11 +9,11 @@ import {
   TableHeader,
   TableRow,
 } from "@/components/ui/table.tsx"
-import { useGetProductsQuery } from "@/features/customers/customersApi.ts"
+import { useGetCustomersQuery } from "@/features/customers/customersApi.ts"
 import { ChevronsUpDown } from "lucide-react"
 
 const Customers = () => {
-  const { data: customers = [], isLoading } = useGetProductsQuery()
+  const { data: customers = [], isLoading } = useGetCustomersQuery()
 
   if (isLoading)
     return (
@@ -20,6 +21,16 @@ const Customers = () => {
         <Spinner className="size-6" />
       </div>
     )
+
+  if (!customers) {
+    return (
+      <div className="w-full h-full flex items-center justify-center">
+        <Alert>
+          <AlertTitle>No customers available.</AlertTitle>
+        </Alert>
+      </div>
+    )
+  }
 
   return (
     <Card>
