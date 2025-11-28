@@ -50,13 +50,11 @@ export type Order = {
 
 export type Product = {
   id: number
-  name: string
+  title: string
   category: string
   price: number
-  size: string
-  quantity: number
+  stock: number
   status: "In Stock" | "Low Stock" | "Out of Stock"
-  date: string // (ISO 8601)
   image: string
 }
 
